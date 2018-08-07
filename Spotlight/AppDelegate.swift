@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreSpotlight
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -41,6 +42,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
-
+    func application(_ application: UIApplication, continue userActivity: NSUserActivity, restorationHandler: @escaping ([UIUserActivityRestoring]?) -> Void) -> Bool {
+        if userActivity.activityType == CSSearchableItemActionType {
+            if let identifier = userActivity.userInfo![CSSearchableItemActivityIdentifier] {
+                print("MOVIE ID = \(String(describing: identifier))")
+            }
+        }
+        return true
+    }
 }
 

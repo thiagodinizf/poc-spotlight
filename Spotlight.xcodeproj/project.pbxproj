@@ -12,6 +12,10 @@
 		472D62642118B68C00A51434 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 472D62622118B68C00A51434 /* Main.storyboard */; };
 		472D62662118B68E00A51434 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 472D62652118B68E00A51434 /* Assets.xcassets */; };
 		472D62692118B68E00A51434 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 472D62672118B68E00A51434 /* LaunchScreen.storyboard */; };
+		472D62712118D52C00A51434 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 472D62702118D52C00A51434 /* Movie.swift */; };
+		472D62732118D7F600A51434 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 472D62722118D7F600A51434 /* DetailViewController.swift */; };
+		472D62762119D60800A51434 /* CoreSpotlight.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 472D62752119D60800A51434 /* CoreSpotlight.framework */; };
+		472D62782119D62200A51434 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 472D62772119D62200A51434 /* MobileCoreServices.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,10 @@
 		472D62652118B68E00A51434 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		472D62682118B68E00A51434 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		472D626A2118B68E00A51434 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		472D62702118D52C00A51434 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		472D62722118D7F600A51434 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		472D62752119D60800A51434 /* CoreSpotlight.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreSpotlight.framework; path = System/Library/Frameworks/CoreSpotlight.framework; sourceTree = SDKROOT; };
+		472D62772119D62200A51434 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +37,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				472D62782119D62200A51434 /* MobileCoreServices.framework in Frameworks */,
+				472D62762119D60800A51434 /* CoreSpotlight.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +50,7 @@
 			children = (
 				472D625D2118B68C00A51434 /* Spotlight */,
 				472D625C2118B68C00A51434 /* Products */,
+				472D62742119D60800A51434 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,8 +71,19 @@
 				472D62652118B68E00A51434 /* Assets.xcassets */,
 				472D62672118B68E00A51434 /* LaunchScreen.storyboard */,
 				472D626A2118B68E00A51434 /* Info.plist */,
+				472D62702118D52C00A51434 /* Movie.swift */,
+				472D62722118D7F600A51434 /* DetailViewController.swift */,
 			);
 			path = Spotlight;
+			sourceTree = "<group>";
+		};
+		472D62742119D60800A51434 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				472D62772119D62200A51434 /* MobileCoreServices.framework */,
+				472D62752119D60800A51434 /* CoreSpotlight.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +159,8 @@
 			files = (
 				472D62612118B68C00A51434 /* ViewController.swift in Sources */,
 				472D625F2118B68C00A51434 /* AppDelegate.swift in Sources */,
+				472D62712118D52C00A51434 /* Movie.swift in Sources */,
+				472D62732118D7F600A51434 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
